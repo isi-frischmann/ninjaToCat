@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<meta charset="utf-8">
+
+	<title>Ninja to Cat</title>
+</head>
+
+<style>
+
+.images {
+	position: absolute;
+}	
+</style>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+
+	$('img').click(function(){
+		var old_sor = $(this).attr('src');
+		var new_sor = $(this).attr('alt-src');
+			$(this).attr({ 'src': new_sor, 'alt-src': old_sor });
+	});
+
+	});
+
+
+
+</script>
+
+<body>
+
+<div class="images">
+	<img src="img/cat0.png" alt-src="img/ninja0.png"><br>
+	<img src="img/cat1.png" alt-src="img/ninja1.png"><br>
+	<img src="img/cat2.png" alt-src="img/ninja2.png"><br>
+	<img src="img/cat3.png" alt-src="img/ninja3.png"><br>
+	<img src="img/cat4.png" alt-src="img/ninja4.png"><br>
+</div>
+
+</body>
+</html>
